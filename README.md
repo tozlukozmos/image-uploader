@@ -1,7 +1,40 @@
-# Vue 3 + Vite
+# Vue image uploader with Firebase  
+Sharing or hosting images, sometimes would be challenging task for me, especially when building HTML template with specific one instead of using any placeholder. Moreover, sharing a link is a easier way than sending actual one separately. Then, I have decided to create my own image uploader to learn the logic behind it. 
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<br/>
 
-## Recommended IDE Setup
+## Goals
+* Provide shorter download/access link
+* Remove images from the Firebase Storage after a specific time
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+<br/>
+
+## Folder structure
+```
+├── src
+|   ├── assets
+|   ├── components
+|   ├── plugins
+|   ├── App.vue
+|   └── main.js
+```
+
+<br/>
+
+## Dependencies
+* [Firebase](https://firebase.google.com/)
+(v9.7.0) for uploading process
+* [Vue](https://vuejs.org/)
+(v3.2.25) for creating frontend
+
+<br/>
+
+> **NOTE:** [Vite](https://vitejs.dev/) have been used as a development template
+<br/>
+
+## Setup
+To run this project, install it locally using npm. Keep in mind that you should be in the root directory before running these commands.
+```
+$ npm install
+$ npm run dev
+```
